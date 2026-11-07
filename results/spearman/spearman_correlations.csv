@@ -1,0 +1,7 @@
+model,analysis,n_pairs,spearman_rho,p_descriptive,interpretation
+BLIP-2,condition_level_20_pairmatched_means,20,0.14436090225563908,0.5437007991990148,Descriptive association across 20 conditions; not causal.
+BLIP-2,pooled_question_condition_drops_descriptive,48009,-0.1760948185889561,0.0,Descriptive only; repeated observations within questions are dependent.
+LLaVA-1.5,condition_level_20_pairmatched_means,20,0.9097744360902256,2.7022557451876124e-08,Descriptive association across 20 conditions; not causal.
+LLaVA-1.5,pooled_question_condition_drops_descriptive,48020,0.07547888722833747,1.284856076932317e-61,Descriptive only; repeated observations within questions are dependent.
+InstructBLIP,condition_level_20_pairmatched_means,20,0.9293233082706768,3.2275217543825784e-09,Descriptive association across 20 conditions; not causal.
+InstructBLIP,pooled_question_condition_drops_descriptive,48020,0.07260361195717681,3.8873545454963e-57,Descriptive only; repeated observations within questions are dependent.

@@ -1,0 +1,81 @@
+{
+  "audit": "Independent paired bootstrap reproduction",
+  "timestamp_utc": "2026-11-03T15:00:51Z",
+  "python": "3.12.15 (main, Oct 13 2026, 16:52:04) [GCC 15.3.0]",
+  "numpy": "2.5.4",
+  "pandas": "3.1.0",
+  "scipy": "1.18.1",
+  "n_boot": 10000,
+  "base_seed_recorded_in_original": 20261029,
+  "model_order": [
+    "BLIP-2",
+    "LLaVA-1.5",
+    "InstructBLIP"
+  ],
+  "actual_rng_seeds": {
+    "BLIP-2": 20261029,
+    "LLaVA-1.5": 20261030,
+    "InstructBLIP": 20261031
+  },
+  "condition_order": [
+    "fog_S1",
+    "fog_S2",
+    "fog_S3",
+    "fog_S4",
+    "fog_S5",
+    "gaussian_noise_S1",
+    "gaussian_noise_S2",
+    "gaussian_noise_S3",
+    "gaussian_noise_S4",
+    "gaussian_noise_S5",
+    "jpeg_compression_S1",
+    "jpeg_compression_S2",
+    "jpeg_compression_S3",
+    "jpeg_compression_S4",
+    "jpeg_compression_S5",
+    "motion_blur_S1",
+    "motion_blur_S2",
+    "motion_blur_S3",
+    "motion_blur_S4",
+    "motion_blur_S5"
+  ],
+  "tolerance": 1e-12,
+  "saved_rows": 180,
+  "reproduced_rows": 180,
+  "matching_rows": 180,
+  "mismatching_rows": 0,
+  "missing_rows": 0,
+  "input_manifest": [
+    {
+      "model": "BLIP-2",
+      "path": "not_distributed/stage7_blip2_full_2401_results.csv",
+      "sha256": "1befc275ff8354dee0e56b679d344895ea4537f3b71082aac007d1dbe4c703b2",
+      "rows": 50421,
+      "unique_questions": 2401,
+      "conditions": 21,
+      "missing_confidence": 11
+    },
+    {
+      "model": "LLaVA-1.5",
+      "path": "not_distributed/full2401_llava15_vast.csv",
+      "sha256": "4df867281a4ceb59b746b5ed1f5b64f73946f7904865472a675de34f4cec6590",
+      "rows": 50421,
+      "unique_questions": 2401,
+      "conditions": 21,
+      "missing_confidence": 0
+    },
+    {
+      "model": "InstructBLIP",
+      "path": "not_distributed/full2401_qa_prompt_instructblip_vast.csv",
+      "sha256": "51e55c26b7a9d2c4393775c18b9779a58a34cc2a35432bd4261c1363fcff0166",
+      "rows": 50421,
+      "unique_questions": 2401,
+      "conditions": 21,
+      "missing_confidence": 0
+    }
+  ],
+  "saved_bootstrap_sha256": "54eac07f1cecd906fc3814105d08da4922a00b8475063a0135b18be76a696019",
+  "reproduced_output_sha256": "86b5bd9f6ba123d5d622c45ffd4a01d20249088121c45d789dcdbb3bc8174408",
+  "comparison_output_sha256": "d262a4072fce373247051e176c8a4f3a0d783f4748dbdefb6fab89d0a900f3eb",
+  "elapsed_seconds": 15.29
+}

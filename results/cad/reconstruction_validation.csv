@@ -1,0 +1,11 @@
+check,passed
+Reconstructed versus candidate: n_paired,True
+Reconstructed versus candidate: mean_accuracy_clean,True
+Reconstructed versus candidate: mean_accuracy_condition,True
+Reconstructed versus candidate: mean_confidence_clean,True
+Reconstructed versus candidate: mean_confidence_condition,True
+Reconstructed versus candidate: mean_accuracy_drop,True
+Reconstructed versus candidate: mean_confidence_drop,True
+Reconstructed versus candidate: CAD,True
+Reconstructed versus candidate: CAD_bootstrap_95CI_lower,True
+Reconstructed versus candidate: CAD_bootstrap_95CI_upper,True

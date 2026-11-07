@@ -1,0 +1,19 @@
+THESIS FINAL OUTPUTS V1
+
+CAD uses the corrected 60-row summary in cad_finalisation_v1.
+Values and intervals are expressed in percentage points.
+The 95% intervals are paired question-level percentile bootstrap intervals
+(10,000 resamples; seed 20261029). Point estimates were reconstructed from
+raw model files; intervals were attached from the existing bootstrap output.
+The bootstrap was not independently rerun during finalisation.
+
+CAD is a condition-level difference between accuracy deterioration and
+confidence-proxy deterioration, not an individual calibration score.
+
+Proxy-ECE uses ECE v1, primary_exclude_empty, ten equal-width bins.
+Empty predictions and rows without valid confidence are excluded.
+It compares a token-confidence proxy with VQA soft scores and is not
+conventional answer-level expected calibration error. It is descriptive.
+
+SVG figures are vector graphics and can be scaled without raster blur.
+Old thesis_tables_v2 and thesis_figures_v3 outputs remain unchanged.

@@ -1,0 +1,12 @@
+experiment,model,script_or_source_directory,result_path,scope,provenance_status
+Main VQA evaluation,BLIP-2,notebooks/,results/stage7_blip2_full_2401_results.csv,2401-question full evaluation,Raw output identified; generator mapping to verify
+Main VQA evaluation,LLaVA-1.5,notebooks/,results/full2401_llava15_vast.csv,2401-question full evaluation,Raw output identified; generator mapping to verify
+Main VQA evaluation,InstructBLIP,notebooks/,results/full2401_qa_prompt_instructblip_vast.csv,2401-question full evaluation,Raw output identified; generator mapping to verify
+CAD finalisation,Three models,notebooks/finalise_cad_summary_v1.py,results/cad_finalisation_v1/three_model_CAD_summary_final.csv,60 model-condition combinations,Reconstruction validated; inherited bootstrap intervals
+Main thesis outputs,Three models,results/thesis_final_outputs_v1/,results/thesis_final_outputs_v1/main_results_60_conditions.csv,60 model-condition combinations,Matches reconstructed CAD summary
+Proxy-ECE,Three models,notebooks/archive_restore_scripts_20261030/run_proxy_ece_analysis.py,results/proxy_ece_v2/,Primary ten-bin analysis,Analysis outputs preserved; generator mapping to verify
+Pair-matched Spearman,Three models,notebooks/archive_restore_scripts_20261030/run_rapid_statistics_v1.py,results/rapid_analysis_v2_spearman_pairmatched/,20 corrupted-condition means per model,Final pair-matched output preserved
+Qualitative failure analysis,Three models,notebooks/analyse_three_model_failure_analysis.py,results/failure_analysis_v1/,23-case manual review and supporting analyses,Purposive review; not prevalence estimation
+D05 verbal confidence pilot,InstructBLIP,notebooks/d05_instructblip_pilot_v3.py,results/d05_pilot_instructblip_v3/,12 questions across 21 conditions,Exploratory post-closure pilot
+Bootstrap reproduction audit,Three models,notebooks/bootstrap_reproduction_audit_v1.py,results/bootstrap_reproduction_audit_v1/,Independent 10,000-resample paired bootstrap across 180 model-condition-metric rows,180/180 rows matched saved intervals within 1e-12; zero mismatches
+Thesis figures,Three models,notebooks/refine_thesis_figures_v3.py,results/thesis_final_figures_v3/,Three SVG figures,Presentation-only revision; numerical values unchanged
